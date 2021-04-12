@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RNWA - DZ 2</title>
+
+<script>
+function showHint(str) {
+    if (str.length == 0) { 
+        document.getElementById("txtHint").innerHTML = "";
+        return;
+    } else {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                document.getElementById("txtHint").innerHTML = xmlhttp.responseText;
+            }
+        }
+        xmlhttp.open("GET", "search.php?s=" + str, true);
+        xmlhttp.send();
+    }
+}
+</script>
+</head>
+<body>
+
+<div class="header">
+	<div class="row">
+		<div class="col-10 col-s-12">
+			<img class="logo" src="./assets/logo.png" alt="BIRT">
+		</div>
+
+		<div class="col-2 col-s-12">
+			<div class="login">
+				<ul>
+					<li><a href="#login">Login</a></li>
+					<li><a href="#register">Register</a></li>
+				</ul>	
+			</div>
+		</div>
+	  </div>
+</div>
+<div class="menu">
+	<ul>
+		<li><a class="active" href="#home">Home</a></li>
+		<li><a href="#news">News</a></li>
+		<li><a href="#contact">Contact</a></li>
+		<li><a href="#about">About</a></li>
+	</ul>	
+</div>
+
+
+
+<div class="row">
+  <div class="col-9 col-s-12">
+    <h1>User Section</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare eleifend nibh sit amet suscipit. Sed vitae est non diam posuere fermentum eu in massa. Sed sit amet luctus enim. Duis sed turpis massa. Sed ac libero in ante sodales fringilla in quis orci. Mauris eget rutrum tortor. Praesent sed molestie purus. Nam sagittis, felis non lacinia porta, nunc est pharetra elit, nec suscipit est quam a ligula. Sed venenatis ultrices arcu non mollis. Nullam in neque tincidunt, feugiat purus ut, porta nisl.
+		 Proin blandit gravida risus sed imperdiet. Sed et fermentum nisi. Fusce at tincidunt nulla, ut accumsan sapien. 
+	</p>
+	<p><b>Search customer by name or last name</b></p>
+	<form> 
+	<input type="text" onkeyup="showHint(this.value)">
+	</form>
+	<p>Output:<br> <span id="txtHint" style="color:purple"></span></p>
+
+  </div>
+
+  <div class="col-3 col-s-12">
+    <div class="aside">
+      <h2>FSRE - Homepage</h2>
+	  <a href="http://fsre.sum.ba/naslovnica/">
+		<img class="aslogo" src="./assets/sum.png" alt="FSRE">
+	  </a>
+       <h2>GitHub - Team 2</h2>
+	   <a href="https://github.com/giganttus/RNWA_2020_2021">
+		<img class="aslogo" src="./assets/github.png" alt="Github">
+	  </a>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="footer">
+  <p> Copyright &copy; RNWA - Tim 2 - DZ 0 - 2021 </p>
+</div>
+
+</body>
+</html>
