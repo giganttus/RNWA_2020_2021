@@ -1,0 +1,2 @@
+soap folder staviti u htdocs i ne mjenjati ime radi zadane relativne putanje u kodu. 
+Da se ne mjenja svaka linija gdje je potrebno lakše je samo tako učiniti.
