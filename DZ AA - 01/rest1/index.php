@@ -13,6 +13,6 @@ if (!$validated) {
   die ("Not authorized");
 }
 
-header("Location: http://localhost/dzx11/v1/employees.php");
+header("Location: http://localhost/rest1/v1/employees.php");
 
 ?>
