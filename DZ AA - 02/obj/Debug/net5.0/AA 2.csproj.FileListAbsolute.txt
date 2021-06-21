@@ -162,3 +162,4 @@ C:\Users\Domagoj\source\repos\AA 2\AA 2\obj\Debug\net5.0\Razor\Views\Orders\Dele
 C:\Users\Domagoj\source\repos\AA 2\AA 2\obj\Debug\net5.0\Razor\Views\Orders\Details.cshtml.g.cs
 C:\Users\Domagoj\source\repos\AA 2\AA 2\obj\Debug\net5.0\Razor\Views\Orders\Edit.cshtml.g.cs
 C:\Users\Domagoj\source\repos\AA 2\AA 2\obj\Debug\net5.0\Razor\Views\Orders\Index.cshtml.g.cs
+C:\Users\Domagoj\source\repos\AA 2\AA 2\obj\Debug\net5.0\AA 2.csprojAssemblyReference.cache
